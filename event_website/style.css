@@ -1,0 +1,262 @@
+/* ====================
+  FOR ALL
+ ======================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ==========================
+  NAVBAR SECTION START
+ =============================*/
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+header.scroll {
+  background: #fff;
+}
+header .brand {
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+  font-family: unset;
+}
+header.scroll .brand {
+  color: #000;
+}
+header .brand span {
+  color: #dc3445 !important;
+  font-size: 45px;
+}
+header ul {
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  font-weight: bold;
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+header.scroll a {
+  color: #000;
+}
+header ul li a:hover {
+  opacity: 1;
+}
+
+/* ===================================
+  NAVBAR SECTION END
+ =================================*/
+
+/* ========================
+  HEADER SECTION START
+ ==========================*/
+
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(photos/header_one.jpg);
+  background-size: cover;
+}
+.header .content {
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+}
+.header .content h2 {
+  font-weight: bold;
+  margin: 20px;
+  font-size: 50px;
+}
+.header .content span {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+/* ============================
+    HEADER SECTION END
+ ==============================*/
+
+/* ===============================
+    ABOUT US SECTION START
+ ==================================*/
+
+.about {
+  margin: 400px auto;
+}
+.about .row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.about .row .col50 {
+  position: relative;
+  width: 48%;
+}
+.about .imgbx {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}
+.about .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 110%;
+  object-fit: cover;
+}
+.about .row .about-text {
+  padding: 10px;
+  margin-left: 100px;
+}
+.about .about-text h2 {
+  font-weight: 600;
+  font-size: 35px;
+  margin: 20px auto;
+}
+.about .about-text h2 span {
+  color: #dc3445;
+  font-size: 40px;
+  font-weight: 800;
+}
+.about .about-text p {
+  font-weight: 600;
+  font-size: 13px;
+}
+.about .btn {
+  font-size: 1em;
+  color: #fff;
+  background: #dc3445;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+}
+.about .btn:hover {
+  letter-spacing: 3px;
+  background: #b80c1d;
+}
+
+/* ==========================
+    ABOUT US SECTION END
+ ==============================*/
+
+/* =============================
+ MAIN EVENT SECTION START
+ ===============================*/
+.main_event {
+  margin-top: 300px;
+}
+.main_event .row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.main_event .box {
+  position: relative;
+  height: 350px;
+  width: 500px;
+  margin: 0 100px;
+}
+.main_event img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+.main_event img:hover {
+  transform: scale(1.1);
+}
+.main_event .box_content {
+  position: absolute;
+  margin-top: 250px;
+  background: #fff;
+  padding: 20px;
+  width: 430px;
+  margin-left: 34px;
+  text-align: center;
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.3),
+    inset 10px 10px 10px -10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.main_event .box_content h2 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.main_event .box_content span {
+  font-style: italic;
+  font-size: 15px;
+}
+.main_event .box_content .event_a {
+  font-weight: bold;
+  color: #3498db;
+  margin-top: 20px !important;
+}
+/* =============================
+ MAIN EVENT SECTION END
+ ===============================*/
+
+/*  ==============================
+      FOOTER SECTION START
+  =================================*/
+footer {
+  background: #3498db;
+  padding: 150px;
+  margin-top: 50px;
+}
+footer a {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
